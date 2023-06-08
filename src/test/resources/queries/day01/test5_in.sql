@@ -1,0 +1,22 @@
+Select * FROM Employees;
+
+--IN works as or logic
+SELECT  * from EMPLOYEES
+Where JOB_ID in ('IT_PROG','SA_REP');
+
+-- id is not
+SELECT  * from EMPLOYEES
+Where JOB_ID Not in ('IT_PROG','SA_REP');
+
+SELECT CITY,COUNTRY_ID from LOCATIONS
+Where COUNTRY_ID in ('IT','US','UK');
+
+SELECT * FROM EMPLOYEES
+Where EMPLOYEE_ID in (134,123,145,146);
+
+-- for null
+SELECT * FROM EMPLOYEES
+Where DEPARTMENT_ID is NULL ;
+
+SELECT * FROM EMPLOYEES
+Where DEPARTMENT_ID is Not NULL ;
